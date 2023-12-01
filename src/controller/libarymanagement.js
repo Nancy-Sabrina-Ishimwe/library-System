@@ -40,7 +40,7 @@ const updateMany =(id,obj) => {
 const remove =(id,obj) =>{
     var exists = booksDatabase.find(ele=>ele.id === id);
     if(exists){
-        booksDatabase = booksDatabase.filter(ele=>ele.id!== id);
+        exists = booksDatabase.filter(ele=>ele.id!== id);
         console.log("\n Book removed\n");
         console.log(exists);
     }else{

@@ -1,7 +1,7 @@
 
-const {add, displayAll, update, updateMany, remove } = require("../controller/libarymanagement");
+const {add, displayAll, update, updateMany, remove } = require("./controller/libarymanagement");
 
-const newBook1 ={
+var newBook1 ={
     
         id: 6,
         title: 'Harry Potter',
@@ -16,7 +16,7 @@ const newBook1 ={
     displayAll();
     update(3,"title","eat well");
 
-   const bookupdated ={
+   var bookupdated ={
      title: 'Mary bridge',
     author: 'Peter',
     year: 1925 
