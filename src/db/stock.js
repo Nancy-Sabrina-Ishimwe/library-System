@@ -1,5 +1,4 @@
 
-const { add,display}= require("./controller/librarymanagement.js")
 
 let booksDatabase = [
  
@@ -37,7 +36,9 @@ let booksDatabase = [
     }
     ];
     
-    module.exports = {booksDatabase};
+    module.exports = {
+        booksDatabase
+    }
     
     
     

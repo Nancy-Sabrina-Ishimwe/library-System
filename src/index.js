@@ -1,5 +1,5 @@
 
-const {add, displayAll, update, updateMany, remove } = require("./controller/libarymanagement");
+const {add, displayAll, update, updateMany, remove } = require("../controller/libarymanagement");
 
 const newBook1 ={
     
@@ -7,12 +7,19 @@ const newBook1 ={
         title: 'Harry Potter',
         author: 'J.K.Rowling',
         year: 1925 
-       },
+       };
+       add(newBook1);
 
-const updateMany ={ 3 ,"title":"Eating well","author":"George Orwell"},
 
-    add(newBook1);
+
+    
     displayAll();
-    update();
-    updateMany;
-    remove()
+    update(3,"title","eat well");
+
+   const bookupdated ={
+     title: 'Mary bridge',
+    author: 'Peter',
+    year: 1925 
+   };
+   updateMany(4,bookupdated);
+    remove(5);
